@@ -11,8 +11,15 @@
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:textSize="15dp"
-        app:layout_constraintStart_toEndOf="@id/ivDrink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <ImageView
+        android:id="@+id/ivDrink"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

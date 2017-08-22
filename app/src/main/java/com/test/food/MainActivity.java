@@ -60,8 +60,10 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 TextView tvName = v.findViewById(R.id.tvName);
+                ImageView ivDrink = v.findViewById(R.id.ivDrink);
                 DrinkModel model = drinkModels.get(position);
                 tvName.setText(model.getName());
+                ivDrink.setImageDrawable(ResourcesCompat.getDrawable(getResources(), model.getDrawable(), null));
                 return v;
             }
 
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         spinner.setAdapter(spinnerAdapter);
-
+        spinner.setSelection(1);//Header should not be selected
     }
 
 
